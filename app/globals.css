@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@liveblocks/react-comments/styles.css";
+
+* {
+  font-family:
+    work sans,
+    sans-serif;
+}
+
+@layer utilities {
+  .no-ring {
+    @apply outline-none ring-0 ring-offset-0 focus:ring-0 focus:ring-offset-0 focus-visible:ring-offset-0 !important;
+  }
+
+  .input-ring {
+    @apply h-8 rounded-lg border-none bg-primary-grey-200/50 backdrop-blur-sm outline-none ring-offset-0 focus:ring-1 focus:ring-primary-green/50 focus:ring-offset-0 focus-visible:ring-offset-0 transition-all !important;
+  }
+
+  .right-menu-content {
+    @apply flex w-80 flex-col gap-y-1 border-glass-border bg-primary-black/80 backdrop-blur-md py-4 text-white shadow-premium rounded-xl !important;
+  }
+
+  .right-menu-item {
+    @apply flex justify-between px-3 py-2 hover:bg-white/5 transition-colors rounded-lg mx-2 !important;
+  }
+
+  .glassmorphism {
+    @apply bg-zinc-950/40 backdrop-blur-xl border-b border-white/[0.08] shadow-soft;
+  }
+
+  .glassmorphism-sidebar {
+    @apply bg-zinc-950/60 backdrop-blur-2xl border-white/[0.05] shadow-premium;
+  }
+
+  .grid-dot {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .premium-transition {
+    @apply transition-all duration-200 ease-out;
+  }
+
+  .selection-glow {
+    filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.3));
+  }
+
+  .focus-ring {
+    @apply focus-visible:ring-1 focus-visible:ring-primary-green focus-visible:ring-offset-0 outline-none transition-shadow;
+  }
+
+  .minimal-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  .minimal-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .minimal-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
