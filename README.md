@@ -1,4 +1,4 @@
-# Agnis Studio 
+# Agnis Design Studio 
 
 Agnis Studio is a real-time collaborative design tool, similar to Figma, built with Next.js, Fabric.js, and Liveblocks. It allows multiple users to design together in real-time on a shared canvas.
 
