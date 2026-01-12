@@ -40,6 +40,11 @@
     background-size: 20px 20px;
   }
 
+  .neon-text {
+    text-shadow: 0 0 10px rgba(34, 197, 94, 0.8), 0 0 20px rgba(34, 197, 94, 0.4);
+    @apply text-primary-green;
+  }
+
   .premium-transition {
     @apply transition-all duration-200 ease-out;
   }

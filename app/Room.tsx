@@ -9,7 +9,7 @@ import { RoomProvider } from "@/liveblocks.config";
 const Room = ({ children }: { children: React.ReactNode }) => {
   return (
     <RoomProvider
-      id="fig-room"
+      id="agnis-room"
       /**
        * initialPresence is used to initialize the presence of the current
        * user in the room.

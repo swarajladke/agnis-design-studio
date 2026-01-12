@@ -16,6 +16,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./ui/tooltip";
+import { name } from "assert";
 
 const Navbar = ({ activeElement, imageInputRef, handleImageUpload, handleActiveElement }: NavbarProps) => {
   const isActive = (value: string | Array<ActiveElement>) =>
@@ -26,13 +27,9 @@ const Navbar = ({ activeElement, imageInputRef, handleImageUpload, handleActiveE
     <div className="absolute top-6 left-0 right-0 flex justify-center z-50 pointer-events-none">
       <nav className="flex select-none items-center gap-2 bg-zinc-950/40 backdrop-blur-xl border border-white/[0.08] p-1.5 rounded-[20px] shadow-soft pointer-events-auto h-[56px]">
         <div className="flex items-center px-4 border-r border-white/5 mr-1 group/logo cursor-default">
-          <Image 
-            src="/assets/logo.svg" 
-            alt="FigPro" 
-            width={32} 
-            height={12} 
-            className="opacity-70 group-hover/logo:opacity-100 premium-transition" 
-          />
+          <span className="font-bold tracking-tight premium-transition neon-text">
+            Agnis
+          </span>
         </div>
 
         <TooltipProvider delayDuration={300}>

@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 
 import "./globals.css";
@@ -5,10 +6,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 
 import Room from "./Room";
 
-export const metadata = {
-  title: "Figma Clone",
+export const metadata: Metadata = {
+  title: "Agnis Design Studio",
   description:
-    "A minimalist Figma clone using fabric.js and Liveblocks for realtime collaboration",
+    "A minimalist real-time collaborative design tool built with Next.js and Liveblocks",
 };
 
 const workSans = Work_Sans({
